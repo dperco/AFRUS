@@ -1,0 +1,60 @@
+
+
+<html>
+    <head>
+         <meta charset="UTF-8">
+         <title>Formulario Tareas</title>
+    </head>
+    <body>
+        <h1> Formulario de Tareas </h1>
+        
+        <br>
+        <div>
+           <div>
+            
+             <label for="Nombre_Tarea">Tarea</label>
+             <input type="text" name="Nombre_Tarea"  id="Nombre_Tarea" maxlength="40" placeholder="Nombre_Tarea">
+            
+            
+             
+           </div>
+            <br>
+            <br>
+            <div>
+            <label for="Fecha_prioridad">Fecha Prioridad</label>
+            <input type="datetime-local" name="Fecha_prioridad" id="Fecha_prioridad" maxlength="40" placeholder="Fecha Prioridad" >
+            
+            </div>
+            <br>
+            <br>
+             <div>
+            <label for="Descripcion">Descripcion</label>
+            <input type="text" name="Descripcion" id="Descripcion" maxlength="100" placeholder="Descripcion" >
+            
+           </div>
+            <br>
+            <br>
+            <div>
+            <button type="submit"  onclick="agregar()">Agregar</button>
+            </div>
+            <div>
+                <button type="submit"  onclick="borrar()">Limpiar</button>
+                </div>
+            <br>
+            <table id="tabla"></table>
+            <!-- <script>
+                document.addEventListener('DOMContentLoaded', function(){
+                  let formulario = document.getElementById('Nombre_Tarea');
+                  formulario.addEventListener('submit', function() {
+                    formulario.reset();
+                  });
+                });
+              </script>  -->
+        
+        <script  src="index.js">
+           
+        </script>
+        </div>
+    </body>
+</html>
+
